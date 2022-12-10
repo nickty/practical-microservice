@@ -11,7 +11,7 @@ mongoose
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hi Mizan from app1 dfsd");
+  res.send("Hi Mizan from app1 dfsd, how this is new");
 });
 
 app.post("/register", register);
