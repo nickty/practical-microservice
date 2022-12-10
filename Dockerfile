@@ -1,6 +1,6 @@
 FROM node:15
 WORKDIR /app3
-COPY package.json /app3
+COPY /app3/package.json .
 
 RUN npm install
 
