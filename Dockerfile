@@ -4,7 +4,7 @@ COPY /app3/package.json .
 
 RUN npm install
 
-COPY . ./
+COPY app3 ./
 
 EXPOSE 9000
 CMD ["node", "index.js"]
