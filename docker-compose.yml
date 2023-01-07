@@ -11,7 +11,7 @@ services:
       - PORT=1000
   app2:
     build:
-      context: ./app2
+      context: .
       args:
         - NODE_ENV=development
     ports:
