@@ -2,7 +2,8 @@ version: '3'
 services:
   app1:
     build:
-      context: ${DIRNAME}/app1
+      context: /app1
+      dockerfile: Dockerfile-alternate
       args:
         - NODE_ENV=development
     ports:
@@ -25,7 +26,3 @@ services:
       - '27017:27017'
     expose:
       - 27017
-
-networks:
-  default: 
-    driver: bridge
