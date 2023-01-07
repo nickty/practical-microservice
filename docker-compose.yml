@@ -11,7 +11,7 @@ services:
       - PORT=1000
   app2:
     build:
-      context: ${DIRNAME}/app2
+      context: /app2
       args:
         - NODE_ENV=development
     ports:
@@ -25,3 +25,7 @@ services:
       - '27017:27017'
     expose:
       - 27017
+
+networks:
+  default: 
+    driver: bridge
